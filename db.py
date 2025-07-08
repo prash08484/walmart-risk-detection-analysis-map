@@ -83,9 +83,15 @@ def get_shops_by_risk(risk_level):
 def get_shop_by_id(shop_id):
     """Get specific shop by ID"""
     conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute("SELECT id, name, lat, lon, risk, analysis FROM shops WHERE id = %s", (shop_id,))
-    row = cur.fetchone()
-    cur.close()
-    conn.close()
-    return row
+    if conn is None:
+        return None
+    try:
+        cur = conn.cursor()
+        cur.execute("SELECT id, name, lat, lon, risk, analysis FROM shops WHERE id = %s", (shop_id,))
+        row = cur.fetchone()
+        cur.close()
+        conn.close()
+        return row
+    except Exception as e:
+        st.error(f"Error fetching shop data: {str(e)}")
+        return None
