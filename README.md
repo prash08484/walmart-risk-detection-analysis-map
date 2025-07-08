@@ -1,6 +1,13 @@
 # 🛡️ Walmart Risk Detection App
 
+> **🌐 [Live Demo - Try the App Now!](https://geo-location-analysis.streamlit.app/)**
+
 A professional interactive web application for visualizing and analyzing risk factors associated with Walmart distribution centers and their supplier network. Built with Streamlit and featuring real-time map visualization, this app helps identify potential supply chain vulnerabilities and operational risks.
+
+[![🚀 Live Demo](https://img.shields.io/badge/🚀-Live%20Demo-success?style=for-the-badge)](https://geo-location-analysis.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13+-blue.svg)](https://postgresql.org)
 
 ## 🎯 Project Overview
 
