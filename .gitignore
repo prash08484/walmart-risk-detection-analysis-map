@@ -1,9 +1,10 @@
-# Walmart Risk Detection App - Git Ignore File
-
-# Environment Variables (contains sensitive data)
+# Environment variables and secrets
 .env
 .env.local
 .env.production
+
+# Streamlit secrets (local development)
+.streamlit/secrets.toml
 
 # Python
 __pycache__/
@@ -30,56 +31,31 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Virtual Environment
+# Virtual environments
 .venv/
-venv/
-ENV/
 env/
-.env/
+ENV/
+venv/
 
-# Database
-*.db
-*.sqlite
-*.sqlite3
-
-# IDE
+# IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# OS
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# Databases
+*.db
+*.sqlite
+*.sqlite3
 
 # Logs
 *.log
-logs/
+
+# OS
+.DS_Store
+Thumbs.db
 
 # Temporary files
 *.tmp
 *.temp
-
-# Coverage reports
-htmlcov/
-.coverage
-.coverage.*
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# Streamlit
-.streamlit/
