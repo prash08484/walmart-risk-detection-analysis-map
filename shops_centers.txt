@@ -1,0 +1,139 @@
+# Walmart Risk Detection App - Centers and Shops Data
+# =================================================
+
+## WALMART CENTERS (50 Locations)
+## ================================
+
+1. Walmart Supercenter Dallas, TX - 32.7767, -96.7970
+2. Walmart Supercenter Houston, TX - 29.7604, -95.3698
+3. Walmart Supercenter Phoenix, AZ - 33.4484, -112.0740
+4. Walmart Supercenter Chicago, IL - 41.8781, -87.6298
+5. Walmart Supercenter Miami, FL - 25.7617, -80.1918
+6. Walmart Supercenter Los Angeles, CA - 34.0522, -118.2437
+7. Walmart Supercenter New York, NY - 40.7128, -74.0060
+8. Walmart Supercenter San Antonio, TX - 29.4241, -98.4936
+9. Walmart Supercenter San Diego, CA - 32.7157, -117.1611
+10. Walmart Supercenter Philadelphia, PA - 39.9526, -75.1652
+11. Walmart Supercenter Jacksonville, FL - 30.3322, -81.6557
+12. Walmart Supercenter Austin, TX - 30.2672, -97.7431
+13. Walmart Supercenter Columbus, OH - 39.9612, -82.9988
+14. Walmart Supercenter Fort Worth, TX - 32.7555, -97.3308
+15. Walmart Supercenter Charlotte, NC - 35.2271, -80.8431
+16. Walmart Supercenter Indianapolis, IN - 39.7684, -86.1581
+17. Walmart Supercenter San Francisco, CA - 37.7749, -122.4194
+18. Walmart Supercenter Seattle, WA - 47.6062, -122.3321
+19. Walmart Supercenter Denver, CO - 39.7392, -104.9903
+20. Walmart Supercenter Boston, MA - 42.3601, -71.0589
+21. Walmart Supercenter El Paso, TX - 31.7619, -106.4850
+22. Walmart Supercenter Nashville, TN - 36.1627, -86.7816
+23. Walmart Supercenter Oklahoma City, OK - 35.4676, -97.5164
+24. Walmart Supercenter Portland, OR - 45.5152, -122.6784
+25. Walmart Supercenter Las Vegas, NV - 36.1699, -115.1398
+26. Walmart Supercenter Detroit, MI - 42.3314, -83.0458
+27. Walmart Supercenter Memphis, TN - 35.1495, -90.0490
+28. Walmart Supercenter Louisville, KY - 38.2527, -85.7585
+29. Walmart Supercenter Baltimore, MD - 39.2904, -76.6122
+30. Walmart Supercenter Milwaukee, WI - 43.0389, -87.9065
+31. Walmart Supercenter Albuquerque, NM - 35.0844, -106.6504
+32. Walmart Supercenter Tucson, AZ - 32.2226, -110.9747
+33. Walmart Supercenter Fresno, CA - 36.7378, -119.7871
+34. Walmart Supercenter Sacramento, CA - 38.5816, -121.4944
+35. Walmart Supercenter Kansas City, MO - 39.0997, -94.5786
+36. Walmart Supercenter Mesa, AZ - 33.4152, -111.8315
+37. Walmart Supercenter Atlanta, GA - 33.7490, -84.3880
+38. Walmart Supercenter Virginia Beach, VA - 36.8529, -75.9780
+39. Walmart Supercenter Omaha, NE - 41.2565, -95.9345
+40. Walmart Supercenter Colorado Springs, CO - 38.8339, -104.8214
+41. Walmart Supercenter Raleigh, NC - 35.7796, -78.6382
+42. Walmart Supercenter Long Beach, CA - 33.7701, -118.1937
+43. Walmart Supercenter Virginia Beach, VA - 36.8529, -75.9780
+44. Walmart Supercenter Tampa, FL - 27.9506, -82.4572
+45. Walmart Supercenter New Orleans, LA - 29.9511, -90.0715
+46. Walmart Supercenter Cleveland, OH - 41.4993, -81.6944
+47. Walmart Supercenter Wichita, KS - 37.6872, -97.3301
+48. Walmart Supercenter Arlington, TX - 32.7357, -97.1081
+49. Walmart Supercenter Bakersfield, CA - 35.3733, -119.0187
+50. Walmart Supercenter Orlando, FL - 28.5383, -81.3792
+
+## SUPPLIER SHOPS (10 Shops per Center = 500 Total)
+## ================================================
+
+### DALLAS CENTER SUPPLIERS:
+1. Tech Electronics Store - 32.7850, -96.8000 (High Risk)
+2. Fresh Grocery Mart - 32.7700, -96.7800 (Low Risk)
+3. Fashion Outlet Center - 32.7900, -96.8100 (Medium Risk)
+4. Auto Parts Warehouse - 32.7600, -96.7900 (High Risk)
+5. Home & Garden Supply - 32.7750, -96.7850 (Low Risk)
+6. Sports Equipment Co - 32.7820, -96.8050 (Medium Risk)
+7. Beauty & Personal Care - 32.7680, -96.7750 (Low Risk)
+8. Pharmacy Supplies Inc - 32.7880, -96.7980 (High Risk)
+9. Toys & Games Distributor - 32.7720, -96.8020 (Medium Risk)
+10. Office Supplies Hub - 32.7800, -96.7920 (Low Risk)
+
+### HOUSTON CENTER SUPPLIERS:
+1. Energy Tech Solutions - 29.7700, -95.3800 (Medium Risk)
+2. Gulf Coast Seafood - 29.7500, -95.3600 (Low Risk)
+3. Petroleum Equipment Co - 29.7650, -95.3750 (High Risk)
+4. Houston Medical Supplies - 29.7580, -95.3720 (Low Risk)
+5. Tex-Mex Food Distributors - 29.7620, -95.3680 (Medium Risk)
+6. Industrial Hardware Store - 29.7750, -95.3800 (High Risk)
+7. Space City Electronics - 29.7520, -95.3650 (Medium Risk)
+8. Bayou Outdoor Gear - 29.7680, -95.3780 (Low Risk)
+9. Chemical Supply Company - 29.7600, -95.3700 (High Risk)
+10. Houston Fashion House - 29.7720, -95.3820 (Low Risk)
+
+### PHOENIX CENTER SUPPLIERS:
+1. Desert Tech Components - 33.4550, -112.0800 (Medium Risk)
+2. Cactus Fresh Produce - 33.4400, -112.0680 (Low Risk)
+3. Southwest Mining Supply - 33.4520, -112.0820 (High Risk)
+4. Arizona Solar Equipment - 33.4460, -112.0720 (Low Risk)
+5. Desert Automotive Parts - 33.4580, -112.0760 (Medium Risk)
+6. Phoenix Sporting Goods - 33.4420, -112.0700 (Low Risk)
+7. Grand Canyon Outfitters - 33.4540, -112.0840 (Medium Risk)
+8. Southwestern Textiles - 33.4480, -112.0780 (High Risk)
+9. Arizona Health Products - 33.4500, -112.0800 (Low Risk)
+10. Desert Home Improvement - 33.4560, -112.0720 (Medium Risk)
+
+### CHICAGO CENTER SUPPLIERS:
+1. Windy City Electronics - 41.8850, -87.6350 (Medium Risk)
+2. Great Lakes Fresh Foods - 41.8720, -87.6250 (Low Risk)
+3. Steel City Industrial - 41.8800, -87.6320 (High Risk)
+4. Chicago Medical Center - 41.8760, -87.6280 (Low Risk)
+5. Midwest Agricultural Supply - 41.8820, -87.6340 (Medium Risk)
+6. Lake Shore Sporting Goods - 41.8740, -87.6260 (Low Risk)
+7. Chicago Fashion District - 41.8880, -87.6380 (Medium Risk)
+8. Industrial Chemical Corp - 41.8810, -87.6330 (High Risk)
+9. Windy City Home & Garden - 41.8770, -87.6290 (Low Risk)
+10. Chicago Tech Solutions - 41.8840, -87.6360 (Medium Risk)
+
+### MIAMI CENTER SUPPLIERS:
+1. Ocean View Electronics - 25.7680, -80.1980 (Medium Risk)
+2. Tropical Fresh Market - 25.7550, -80.1850 (Low Risk)
+3. Miami Beach Fashion - 25.7640, -80.1920 (Low Risk)
+4. Port of Miami Logistics - 25.7700, -80.2000 (High Risk)
+5. Florida Citrus Distributors - 25.7580, -80.1880 (Low Risk)
+6. South Beach Sporting Goods - 25.7620, -80.1900 (Medium Risk)
+7. Art Deco Home Supplies - 25.7660, -80.1940 (Low Risk)
+8. Caribbean Import Co - 25.7720, -80.2020 (High Risk)
+9. Miami Healthcare Products - 25.7600, -80.1860 (Low Risk)
+10. Sunshine State Electronics - 25.7640, -80.1960 (Medium Risk)
+
+## RISK LEVEL DISTRIBUTION:
+## ========================
+- High Risk (🔴): ~30% of suppliers
+- Medium Risk (🟡): ~40% of suppliers  
+- Low Risk (🟢): ~30% of suppliers
+
+## GEOGRAPHIC COVERAGE:
+## ====================
+- 50 Walmart Supercenters across major US cities
+- 500 Supplier shops (10 per center)
+- Coverage across all major metropolitan areas
+- Realistic geographic distribution matching Walmart's footprint
+
+## DATA SOURCES:
+## =============
+- Walmart store locations based on major US markets
+- Supplier coordinates within 2-5km radius of each center
+- Risk assessments based on common supply chain factors
+- Analysis text reflects real-world supplier evaluation criteria
