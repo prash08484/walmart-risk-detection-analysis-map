@@ -498,3 +498,4 @@ if __name__ == "__main__":
     print("\n🎯 Next Steps:")
     print("1. For immediate testing: Use SQLite (already created)")
     print("2. For PostgreSQL: Run the postgresql_setup.sql file in your PostgreSQL database")
+    
