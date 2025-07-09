@@ -48,6 +48,22 @@ def get_center(center_id):
         st.error(f"Error fetching center data: {str(e)}")
         return None
 
+def get_all_centers():
+    """Get all Walmart centers"""
+    conn = get_db_connection()
+    if conn is None:
+        return []
+    try:
+        cur = conn.cursor()
+        cur.execute("SELECT id, name, lat, lon FROM centers ORDER BY id")
+        rows = cur.fetchall()
+        cur.close()
+        conn.close()
+        return rows
+    except Exception as e:
+        st.error(f"Error fetching all centers data: {str(e)}")
+        return []
+
 def get_shops():
     """Get all shops with risk analysis"""
     conn = get_db_connection()
