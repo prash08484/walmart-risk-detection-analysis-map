@@ -191,19 +191,160 @@ Each Walmart center shows:
 
 ```
 Entire-Project/
-├── app.py                 # Main Streamlit app with path visualization
-├── db.py                  # Database operations with get_all_centers()
-├── requirements.txt       # Python dependencies
-├── .env                   # Environment variables
-├── setup_database.py      # SQLite setup with 50 centers, 100 shops
-├── setup_neon.py         # Neon PostgreSQL setup with expanded data
-├── postgresql_setup.sql  # SQL script with all 50 centers and shops
-├── shops_centers.txt     # Complete listing of all locations
-├── test_features.py      # Feature testing and verification
-├── test_sqlite.py        # Database verification script
-├── FEATURE_SUMMARY.md    # Detailed feature implementation summary
-└── README.md             # This comprehensive guide
+├── 🎯 Core Application Files
+│   ├── app.py                 # Main Streamlit app with interactive mapping
+│   ├── db.py                  # Database operations & data retrieval
+│   └── requirements.txt       # Python dependencies & versions
+│
+├── 🗄️ Database & Setup
+│   ├── setup_database.py      # SQLite database setup (50 centers, 100+ shops)
+│   ├── setup_neon.py         # Neon PostgreSQL cloud setup
+│   ├── postgresql_setup.sql  # SQL script with complete dataset
+│   ├── walmart_risk.db       # Local SQLite database (auto-generated)
+│   └── .env                   # Environment variables & credentials
+│
+├── 📊 Data & Documentation
+│   ├── shops_centers.txt     # Complete listing of all locations & features
+│   └── README.md             # Comprehensive project documentation
+│
+├── ⚙️ Configuration & Deployment
+│   ├── .streamlit/           # Streamlit configuration directory
+│   ├── .gitignore            # Git ignore rules for clean repository
+│   ├── .git/                 # Git version control (repository history)
+│   └── .venv/                # Python virtual environment (auto-generated)
+│
+└── 🔧 Generated Files
+    └── __pycache__/          # Python cache files (auto-generated)
 ```
+
+### 📁 Detailed File Descriptions
+
+#### 🎯 Core Application Files
+- **`app.py`** - Main Streamlit web application featuring:
+  - Interactive Folium map with 50 Walmart centers
+  - Risk-based shop visualization (100+ locations)
+  - Purple path lines to nearest centers with distance display
+  - Click-to-analyze functionality and shop selection buttons
+  - Professional UI with sidebar controls and statistics
+
+- **`db.py`** - Database interface module providing:
+  - `get_center()` - Retrieve specific Walmart center data
+  - `get_shops()` - Fetch all supplier shops with risk analysis
+  - `get_all_centers()` - Get complete list of Walmart centers
+  - Support for both SQLite and PostgreSQL databases
+
+- **`requirements.txt`** - Production-ready dependencies:
+  - Streamlit for web framework
+  - Folium & streamlit-folium for interactive mapping
+  - PostgreSQL support with psycopg2-binary
+  - Data processing libraries (pandas, numpy)
+
+#### 🗄️ Database & Setup Scripts
+- **`setup_database.py`** - SQLite database initialization:
+  - Creates local `walmart_risk.db` with complete dataset
+  - 50 Walmart centers across major US cities
+  - 100+ supplier shops with realistic risk assessments
+  - Perfect for development and quick testing
+
+- **`setup_neon.py`** - Cloud PostgreSQL setup:
+  - Connects to Neon cloud database
+  - Optimized dataset (30 shops for performance)
+  - Production-ready configuration
+  - Environment variable integration
+
+- **`postgresql_setup.sql`** - Raw SQL script:
+  - Direct database setup option
+  - Complete INSERT statements for all data
+  - Backup/restore functionality
+  - Database migration support
+
+#### 📊 Data Files
+- **`shops_centers.txt`** - Human-readable data listing:
+  - All 50 Walmart centers with coordinates
+  - Complete shop inventory with risk levels
+  - Feature summary and implementation notes
+  - Quick reference for data verification
+
+#### ⚙️ Configuration Files
+- **`.env`** - Environment configuration:
+  - Database connection strings
+  - Neon PostgreSQL credentials
+  - API keys and sensitive data
+  - Local development settings
+
+- **`.streamlit/`** - Streamlit app configuration:
+  - Custom themes and styling
+  - Server configuration options
+  - Deployment settings
+
+- **`.gitignore`** - Version control exclusions:
+  - Environment files (.env)
+  - Database files (*.db)
+  - Python cache and virtual environments
+  - System-specific files
+
+#### 🚀 Auto-Generated Files
+- **`walmart_risk.db`** - SQLite database (created by setup_database.py)
+- **`.venv/`** - Python virtual environment
+- **`__pycache__/`** - Python bytecode cache
+- **`.git/`** - Git repository metadata
+
+### 🔧 Quick Setup Commands
+
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Setup database (choose one)
+python setup_database.py     # Local SQLite (recommended for testing)
+python setup_neon.py        # Cloud PostgreSQL (production)
+
+# 3. Launch application
+streamlit run app.py
+
+# 4. Access the app
+# Browser opens automatically at http://localhost:8501
+```
+
+### 📋 File Dependencies
+
+```mermaid
+graph TD
+    A[app.py] --> B[db.py]
+    A --> C[requirements.txt]
+    B --> D[walmart_risk.db]
+    B --> E[.env]
+    F[setup_database.py] --> D
+    G[setup_neon.py] --> E
+    H[postgresql_setup.sql] --> I[PostgreSQL DB]
+    B --> I
+```
+
+### 🎯 Development Workflow
+
+1. **First Time Setup**:
+   ```bash
+   git clone <repository>
+   cd Entire-Project
+   python -m venv .venv
+   .venv\Scripts\activate  # Windows
+   pip install -r requirements.txt
+   python setup_database.py
+   ```
+
+2. **Daily Development**:
+   ```bash
+   .venv\Scripts\activate  # Activate environment
+   streamlit run app.py    # Launch app
+   # Edit files as needed
+   ```
+
+3. **Production Deployment**:
+   ```bash
+   # Configure .env with production credentials
+   python setup_neon.py   # Setup cloud database
+   # Deploy to Streamlit Cloud or other platform
+   ```
 
 ## 🔧 Configuration
 
