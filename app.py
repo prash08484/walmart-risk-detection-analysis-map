@@ -326,9 +326,6 @@ if map_data and map_data.get("last_object_clicked"):
     lat_clicked = clicked_data.get("lat")
     lng_clicked = clicked_data.get("lng")
     
-    st.write("🔍 Debug: Click detected!")
-    st.write(f"Coordinates: {lat_clicked}, {lng_clicked}")
-    
     # Try to find shop by coordinates if popup parsing fails
     if lat_clicked and lng_clicked:
         # Find closest shop to clicked coordinates
@@ -346,7 +343,6 @@ if map_data and map_data.get("last_object_clicked"):
         
         if closest_shop_id and closest_shop_id != st.session_state.selected_shop_id:
             st.session_state.selected_shop_id = closest_shop_id
-            st.success(f"🎯 Selected shop ID: {closest_shop_id}")
             st.rerun()
     
     # Also try popup parsing as backup
@@ -359,10 +355,9 @@ if map_data and map_data.get("last_object_clicked"):
                 shop_id = int(shop_id_match.group(1))
                 if st.session_state.selected_shop_id != shop_id:
                     st.session_state.selected_shop_id = shop_id
-                    st.success(f"🎯 Selected shop ID: {shop_id}")
                     st.rerun()
-        except (ValueError, AttributeError) as e:
-            st.write(f"Debug: Popup parsing error: {e}")
+        except (ValueError, AttributeError):
+            pass  # Silently handle parsing errors
 
 # Show detailed analysis if a shop is selected
 if st.session_state.selected_shop_id:
